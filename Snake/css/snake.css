@@ -1,0 +1,50 @@
+*{
+  padding:0;
+  margin: 0;
+}
+.body{
+  background:url("../img/bg.jpg");
+  min-height:100vh;
+  background-size:100vw,100vh;
+  background-repeat: no-repeat;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+}
+#board{
+  background:linear-gradient(rgb(131, 106, 106), rgb(170, 170, 135));
+  width:90vmin;
+  height:50vmax;
+  border :2px solid black;
+  display : grid;
+  grid-template-rows:repeat(18,1fr);
+  grid-template-columns:repeat(18,1fr);
+}
+#scoreBox{
+position:absolute;
+top:9px;
+right:200px;
+font-size:30px;
+font-weight:bold;
+}
+.head{
+background :linear-gradient(red,orange);
+border: 2px solid darkred;
+transform:scale(1.02);
+}
+.snake{
+background-color: #ff8800;
+border : 2px solid dark orangered;
+
+}
+.food{
+background: linear-gradient(chartreuse , green);
+border: 2px solid darkseagreen;
+}
+#hiscoreBox{
+  position: absolute;
+  top: 59px;
+  right: 140px;
+  font-size: 39px;
+  font-weight: bold;
+  font-family: 'New Tegomin', serif;
